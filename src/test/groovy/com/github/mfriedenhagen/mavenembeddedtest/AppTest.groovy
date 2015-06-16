@@ -7,7 +7,7 @@ class AppTest extends Specification {
     def "executes main"() {
         given:
         @Subject
-        App subjectUnderTest = new App("foo", "bar")
+        App subjectUnderTest = new App("validate")
         expect:
         subjectUnderTest != null
     }

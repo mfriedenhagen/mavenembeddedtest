@@ -10,6 +10,7 @@ public class App {
     private final cli = new MavenCli()
 
     public App(String[] strings) {
+        System.properties['maven.multiModuleProjectDirectory'] = ''
         cli.doMain(strings, '.', System.out, System.err)
     }
 
