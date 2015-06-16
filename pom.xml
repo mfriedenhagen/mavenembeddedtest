@@ -29,6 +29,8 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <findbugs.skip>true</findbugs.skip>
+        <jacoco.haltOnFailure>false</jacoco.haltOnFailure>
     </properties>
 
     <dependencyManagement>
