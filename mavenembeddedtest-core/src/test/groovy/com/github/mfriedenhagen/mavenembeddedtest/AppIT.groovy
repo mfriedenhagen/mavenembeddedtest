@@ -4,11 +4,13 @@ import spock.lang.Specification
 import spock.lang.Subject
 
 class AppIT extends Specification {
-    def "executes main"() {
+    def "Check URL"() {
         given:
         @Subject
-        App subjectUnderTest = new App("validate")
-        expect:
-        subjectUnderTest != null
+        def url = new URL("https://www.google.de/")
+        when:
+        def body = url.openStream().text
+        then:
+        body.contains('<input class="gsfi"')
     }
 }
