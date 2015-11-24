@@ -11,6 +11,6 @@ class AppIT extends Specification {
         when:
         def body = url.openStream().text
         then:
-        body.contains('<input class="gsfi"')
+        body.contains('</html>')
     }
 }
